@@ -1,0 +1,102 @@
+/* VARIABLES */
+:root {
+  --primary-color: #582900; /*-- MA COULEUR CAFE */
+  --primary-color-darker: #331800; /*-- MA COULEUR CAFE FONCE */
+  --secondary-color: #fd6c9e; /*-- MA COULEUR ROSE --*/
+  --secondary-color-variante: #fd6c9fca; /*-- MA COULEUR ROSE transparence ajoute --*/
+  --tertiary-color: #77b5fe; /*-- MA COULEUR BLEU CIEL --*/
+}
+
+/* GENERAL & GLOBAL & BASE CLASSES */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", serif;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.tout-en-majuscules {
+  text-transform: uppercase;
+}
+
+/* FONTS */
+/* .lato-regular {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  .lato-bold {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+} */
+
+header {
+  height: 43vh;
+  background-image: url("ASSETS/images/banner\ scripto.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* EN FAIRE UN MEDIA QUERIES */
+  padding: 1rem;
+  color: #fff;
+}
+#logo {
+  height: 153px;
+  width: auto;
+  margin-right: 2rem;
+  border-radius: 50%;
+}
+#LemenuP {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#LemenuP li {
+  display: inline-block;
+  padding: 11px 7px;
+  margin-right: 20px;
+  border-radius: 50px;
+}
+#LemenuP li:hover {
+  background-color: var(--tertiary-color);
+}
+#LemenuP a {
+  color: var(--primary-color-darker);
+  text-decoration: none;
+}
+#LemenuP a:hover {
+  color: var(--primary-color-darker);
+}
+
+/* Main Styles */
+
+main {
+  max-width: 91%; /* Optional: Set a maximum width for the main content */
+  margin: auto;
+  padding: 2rem;
+  color: var(--primary-color-darker);
+  border-radius: 13px;
+}
+
+#accueil {
+    padding-bottom: 7.3rem;
+}
+#accueil h1 {
+  color: #77b5fe;
+  font-size: 3.3em;
+  text-align: center;
+}
+#accueil > p {
+  width: 73%;
+  margin: auto;
+}
+#accueil p + p {
+  font-size: 1.3em;
+  margin-top: 53px;
+  text-align: center;
+}
+
