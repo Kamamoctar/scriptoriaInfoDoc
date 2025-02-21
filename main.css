@@ -7,7 +7,7 @@
   --tertiary-color: #77b5fe; /*-- MA COULEUR BLEU CIEL --*/
 
   --font-size-h1: 2.5rem; /* Taille pour h1 */
-  --font-size-h2: 2rem;   /* Taille pour h2 */
+  --font-size-h2: 2rem; /* Taille pour h2 */
   --font-size-h3: 1.75rem; /* Taille pour h3 */
 }
 
@@ -27,14 +27,14 @@ body {
 
 /* FONTS */
 .lato-regular {
-    font-family: "Lato", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
 }
-  .lato-bold {
-    font-family: "Lato", serif;
-    font-weight: 700;
-    font-style: normal;
+.lato-bold {
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 header {
@@ -87,7 +87,7 @@ main {
 }
 
 #accueil {
-    padding-bottom: 7.3rem;
+  padding-bottom: 7.3rem;
 }
 #accueil h1 {
   color: #77b5fe;
@@ -102,7 +102,8 @@ main {
   font-size: 1.3em;
   margin-top: 53px;
   text-align: center;
-} #accueil p + p:hover {
+}
+#accueil p + p:hover {
   background-color: rgba(119, 182, 254, 0.333);
   border-radius: 50px;
 }
@@ -110,7 +111,8 @@ main {
 /* MAIN -> PRESNTATION DES SERVICES */
 #services {
   border-top: 0.3px solid var(--secondary-color);
-}#services > h2 {
+}
+#services > h2 {
   font-size: var(--font-size-h2);
   display: grid;
   justify-content: center;
@@ -144,17 +146,9 @@ main {
   padding: 0 13px;
 }
 
-
-
-
-
-
-
-
-
-
 /* Section Contact */
 #contact {
+  margin-top: 13px;
   padding: 2rem;
   text-align: center;
   border-top: 0.3px solid var(--secondary-color);
@@ -165,9 +159,23 @@ main {
   color: var(--primary-color);
   margin-bottom: 1rem;
 }
+#contact > article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 #contact p {
   margin-bottom: 0.5rem;
+  padding: 55px;
+}
+#contact p:nth-child(odd):hover {
+  border: 3px solid var(--primary-color);
+  border-radius: 55px 13px 13px 55px;
+}
+#contact p:nth-child(even):hover {
+  border: 3px solid var(--secondary-color);
+  border-radius: 13px 55px 55px 13px;
 }
 
 #contact a {
@@ -179,6 +187,7 @@ main {
 #contact a:hover {
   text-decoration: underline;
 }
+
 
 /* Footer */
 footer {
@@ -197,10 +206,22 @@ footer span#year {
   font-weight: bold;
 }
 
+/* -------------------------------------- 
+            PAGE DES SERVICES 
+------------------------------------------ */
 
 
 
-@media (prefers-color-scheme: dark) {
+
+
+
+
+
+
+
+
+/* Dark Mode */
+/* @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
     color: white;
@@ -219,4 +240,8 @@ footer span#year {
     background-color: rgba(51, 24, 0, 1);
     border-radius: 13px 33px 13px;
   }
-}
+
+  #contact h2 {
+    color: #77b5fe;
+  }
+} */
