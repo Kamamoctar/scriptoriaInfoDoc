@@ -1,0 +1,55 @@
+main > section + section {
+  margin-top: 100px;
+}
+.theArticleContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.theArticleContainer > article {
+  flex: 1 1 23%; /* Responsive width */
+  margin: 13px;
+  border: 1px solid #ddd; /* Subtle border for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 20px; /* Inner spacing */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+.theArticleContainer > article:nth-child(odd) {
+  background-color: rgba(
+    253,
+    108,
+    159,
+    0.3
+  ); /* Light background for the card */
+}
+.theArticleContainer > article:nth-child(even) {
+  background-color: rgba(
+    119,
+    182,
+    254,
+    0.3
+  ); /* Light background for the card */
+}
+/* Hover effect for the card */
+.theArticleContainer article:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Centering the article headings */
+.theArticleContainer > article h2 {
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+/* Styling the article paragraphs */
+.theArticleContainer article p {
+  font-size: 1.19rem;
+  line-height: 1.9;
+}
+
+/* Strong text styling */
+.theArticleContainer > article p strong {
+  font-weight: bolder;
+  color: #000; /* Bold text for emphasis */
+}
