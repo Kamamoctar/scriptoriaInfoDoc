@@ -53,22 +53,3 @@ main > section + section {
   font-weight: bolder;
   color: #000; /* Bold text for emphasis */
 }
-
-
-@media (prefers-color-scheme: dark) {
-  .theArticleContainer > article:nth-child(even) {
-    background-color: rgb(253, 108, 159);
-    border-radius: 13px 33px 13px;
-  }
-  .theArticleContainer > article:nth-child(odd) {
-    background-color: rgba(51, 24, 0, 1);
-    border-radius: 33px 13px 33px;
-  }
-  .theArticleContainer > article:nth-child(odd) strong {
-    color: #fff;
-    font-size: larger;
-  }
-  .theArticleContainer > article:nth-child(even) strong {
-    font-size: larger;
-  }
-}

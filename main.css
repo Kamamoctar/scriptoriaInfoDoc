@@ -205,9 +205,20 @@ footer span#year {
   font-weight: bold;
 }
 
-/* -------------------------------------- 
-            PAGE DES SERVICES 
------------------------------------------- */
+.theArticleContainer > article:nth-child(even) {
+  background-color: rgb(253, 108, 159);
+  border-radius: 13px 33px 13px;
+}
+.theArticleContainer > article:nth-child(odd) {
+  background-color: rgba(51, 24, 0, 1);
+  border-radius: 33px 13px 33px;
+}
+.theArticleContainer > article:nth-child(odd) strong {
+  font-size: larger;
+}
+.theArticleContainer > article:nth-child(even) strong {
+  font-size: larger;
+}
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
@@ -234,5 +245,11 @@ footer span#year {
 
   #contact h2 {
     color: #77b5fe;
+  }
+  .theArticleContainer > article:nth-child(odd) strong {
+    color: #fff;
+  }
+  .theArticleContainer > article:nth-child(even) strong {
+    color: #fff;
   }
 }
