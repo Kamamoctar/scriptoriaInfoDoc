@@ -253,3 +253,24 @@ footer span#year {
     color: #fff;
   }
 }
+
+
+/* MEDIA QUERIES FOR LARGER SCREENS */
+@media (min-width: 768px) {
+  #servicesContainer {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    flex-direction: row; /* Horizontal layout for larger screens */
+    justify-content: space-between;
+  }
+  #servicesContainer {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for desktops */
+  }
+  main {
+    max-width: 80%; /* Center content with a max width */
+  }
+}
