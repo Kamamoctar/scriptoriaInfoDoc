@@ -188,7 +188,6 @@ main {
   text-decoration: underline;
 }
 
-
 /* Footer */
 footer {
   background-color: var(--primary-color);
@@ -210,18 +209,8 @@ footer span#year {
             PAGE DES SERVICES 
 ------------------------------------------ */
 
-
-
-
-
-
-
-
-
-
-
 /* Dark Mode */
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   body {
     background-color: black;
     color: white;
@@ -229,7 +218,9 @@ footer span#year {
   main {
     color: white;
   }
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     color: var(--tertiary-color);
   }
   .service-card:nth-child(odd) {
@@ -244,4 +235,4 @@ footer span#year {
   #contact h2 {
     color: #77b5fe;
   }
-} */
+}
