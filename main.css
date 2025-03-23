@@ -55,8 +55,7 @@ nav {
   color: var(--secondary-color);
 }
 .logo img {
-  width: 100px;
-  height: auto;
+  height: 50px;
 }
 
 .nav-links {
