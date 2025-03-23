@@ -1,2 +1,2 @@
 # scriptoriaInfoDoc
-Site de scriptoria
+Le site de mon business
